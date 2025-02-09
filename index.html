@@ -1,13 +1,118 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-
-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is where I showcase my projects and skills.</p>
+    <div id="page-wrapper">
+        <!-- Sidebar Menu -->
+        <div class="responsive-nav">
+            <div id="menu" class="menu">
+                <div class="container">
+                    <div class="profile-pic">
+                        <img src="images/mypicture.jpg" alt="Profile Picture">
+                    </div>
+                    <div class="author-content">
+                        <h1>Your Name</h1>
+                        <h2 class="subtitle">Your Age</h2>
+                    </div>
+                    <nav class="main-nav" role="navigation">
+                        <ul class="main-menu">
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#certification">Certification</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social-links">
+                        <div class="git-link">
+                            <a href="https://github.com/JoshuaSan942" target="_blank">
+                                <img src="images/git.png" alt="GitHub Link">
+                            </a>
+                        </div>
+                        <div class="linkedin-link">
+                            <a href="https://www.google.fr" target="_blank">
+                                <img src="images/linkedin.png" alt="LinkedIn Link">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="images/0M4A3907.jpg" alt="About Me Picture" class="about-pic">
+                    <p>My name is Joshua, I am 21 years old, and I am a first-year French student pursuing a BTS in Cybersecurity at Lycée Guillaume Kroll. I am passionate, versatile, and attentive to others. I excel both independently and as part of a team, leveraging my strengths to achieve my goals. I enjoy helping and sharing my knowledge and skills as needed, while also being eager to learn and seek assistance when necessary. I possess a strong ability to adapt to various situations.
+
+                        In my personal life, I enjoy sports, video games, music, and traveling.</p>
+                </div>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-content">
+                    <h3>Technical Skills</h3>
+                    <p>I can code with Python, Java, C, Swift, HTML, CSS, JS. </p>
+                    <p>I can also use many graphical tools like Adobe Photoshop, Gimp, Blender, Canva.</p>
+                    <p>I am fluent in French and Tamil, I am B2 in English and B1 in German.</p>
+                    <h3>Social Skills</h3>
+                    <p> Teamworking, communication and personal working are some of my social skills.</p>
+                </div>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <p>I have 2 working experience:</p>
+                <p>Deep.lu in 2024</p>
+            </section>
+            <section id="certification">
+                <h2>Certification</h2>
+                <div class="certification-container">
+                    <div class="certification-box" onclick="zoomImage('images/WordCertif.jpg')">
+                        <img src="images/wordCertifImage.png" alt="Certification Badge" class="certification-badge">
+                        <img src="images/WordCertif.jpg" alt="Certification" class="certification-image">
+                    </div>
+                    <div class="certification-box" onclick="zoomImage('images/PptCertif.jpg')">
+                        <img src="images/pptCertifImage.png" alt="Certification Badge" class="certification-badge small-badge">
+                        <img src="images/PptCertif.jpg" alt="Certification" class="certification-image">
+                    </div>
+                    <div class="certification-box" onclick="zoomImage('images/CudaCertif.pdf')">
+                        <img src="images/CudaCertif.png" alt="Certification Badge" class="certification-badge" onerror="showFallbackText(this)">
+                        <p class="fallback-text">The certification is the Fundamental of Accelerated Computing with CUDA Python</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="contact-container">
+                    <div class="contact-text">
+                        <p>Thank you for reading my Portfolio! You can take a look at my CV and if you would like to contact me, feel free to reach me out.</p>
+                    </div>
+                    <div class="cv-buttons">
+                        <button onclick="downloadCV('images/cvFR.pdf')">CV French Version</button>
+                        <button onclick="downloadCV('images/cvEN.pdf')">CV English Version</button>
+                    </div>
+                    <div class="social-links">
+                        <div class="git-link">
+                            <a href="https://github.com/JoshuaSan942" target="_blank">
+                                <img src="images/git.png" alt="GitHub Link">
+                            </a>
+                        </div>
+                        <div class="linkedin-link">
+                            <a href="https://www.linkedin.com/in/joshua-sandanassamy/" target="_blank">
+                                <img src="images/linkedin.png" alt="LinkedIn Link">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
